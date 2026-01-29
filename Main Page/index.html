@@ -33,6 +33,26 @@
             <button class="btn btn-nature shadow-lg">Begin Your Journey</button>
         </div>
     </section>
+    <section>
+        <div class="row g-4 justify-content-center w-100" style="max-width: 900px;">
+                    <div class="col-md-5">
+                        <div class="glass-card choice-card d-flex flex-column align-items-center justify-content-center h-100" onclick="router('discard')">
+                            <span class="icon-large">🗑️ ➔ 🎁</span>
+                            <h4 class="fw-bold">I Have Discarded Material</h4>
+                            <p class="small text-muted mb-0">Households, Factories, Shops</p>
+                            <button class="btn btn-action mt-3">Start Routing</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="glass-card choice-card d-flex flex-column align-items-center justify-content-center h-100" onclick="router('need')">
+                            <span class="icon-large">🏭 ➔ 🛠️</span>
+                            <h4 class="fw-bold">I Need Raw Material</h4>
+                            <p class="small text-muted mb-0">Rural Artisans, Farmers, Industry</p>
+                            <button class="btn btn-secondary-custom mt-3">Find Source</button>
+                        </div>
+                    </div>
+                </div>
+    </section>
 
     <section class="container my-5 py-5">
         <div class="row g-4">
@@ -70,21 +90,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script>
-        // Initialize Animations
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true
-        });
-
-        // Suble Mouse Parallax for Hero
-        document.addEventListener("mousemove", function(e) {
-            const moveX = (e.clientX * -0.01);
-            const moveY = (e.clientY * -0.01);
-            document.querySelector('.hero').style.backgroundPosition = `${moveX}px ${moveY}px`;
-        });
-    </script> -->
+   
 
 
     <script src="index.js"></script>

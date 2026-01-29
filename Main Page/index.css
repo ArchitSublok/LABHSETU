@@ -68,6 +68,104 @@
             box-shadow: 0 0 20px var(--biolume);
         }
 
+
+
+        
+        /* two options for discard and reuse */
+        /* Container Background to match the image's off-white cream */
+section {
+    background-color: #f7f5f2; 
+    padding: 80px 0;
+}
+
+/* 1. The White Choice Card */
+.choice-card {
+    background: #ffffff;
+    border-radius: 35px; /* Matches the highly rounded corners in the image */
+    padding: 50px 30px;
+    border: none;
+    text-align: center;
+    /* Soft, diffused shadow for the "floating" effect */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.choice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. Large Icon / Emoji Styling */
+.icon-large {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.05));
+}
+
+/* 3. Typography */
+.choice-card h4 {
+    color: #1a2e24; /* Deep forest green from the text */
+    font-size: 1.75rem;
+    font-weight: 800 !important;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.choice-card p {
+    color: #888888;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* 4. Button: Start Routing (Terracotta Solid) */
+.btn-action {
+    background-color: #d97d5d; /* Precise terracotta orange */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 45px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* Special colored shadow for the orange button */
+    box-shadow: 0 10px 20px rgba(217, 125, 93, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #c46a4d;
+    color: #ffffff;
+    box-shadow: 0 15px 25px rgba(217, 125, 93, 0.4);
+}
+
+/* 5. Button: Find Source (Deep Forest Outline) */
+.btn-secondary-custom {
+    background-color: transparent;
+    color: #1a2e24; /* Deep forest green */
+    border: 2px solid #1a2e24;
+    border-radius: 50px;
+    padding: 14px 45px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #1a2e24;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+        
         /* Form Styling */
         .form-control {
             border-radius: 15px;
