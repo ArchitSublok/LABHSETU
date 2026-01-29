@@ -1,0 +1,103 @@
+:root {
+            --forest: #2D4739;
+            --moss: #84A59D;
+            --sun: #F4A261;
+            --mist: #F8F9F8;
+            --biolume: rgba(132, 165, 157, 0.2);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--mist);
+            color: var(--forest);
+            overflow-x: hidden;
+        }
+
+        h1, h2 { font-family: 'Playfair Display', serif; }
+
+        /* Glassmorphism Navbar */
+        .navbar {
+            background: rgba(248, 249, 248, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(45, 71, 57, 0.1);
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #E0F7FA 0%, #f8f9f8 100%);
+            position: relative;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 10%;
+        }
+
+        /* Organic Bento Cards */
+        .bento-card {
+            background: white;
+            border-radius: 30px;
+            padding: 2rem;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(45, 71, 57, 0.1);
+        }
+
+        /* Animated Buttons */
+        .btn-nature {
+            background-color: var(--moss);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            border: none;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-nature:hover {
+            background-color: var(--forest);
+            color: white;
+            box-shadow: 0 0 20px var(--biolume);
+        }
+
+        /* Form Styling */
+        .form-control {
+            border-radius: 15px;
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 10px var(--biolume);
+            border-color: var(--moss);
+        }
+
+        /* Custom Sprout Underline */
+        .nav-link {
+            position: relative;
+            color: var(--forest) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--moss);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
